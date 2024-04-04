@@ -2,6 +2,8 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Logistice extends CI_Controller {
+    public $db, $email, $session, $form_validation, $upload, $login_model, $dashboard_model, $employee_model, $loan_model, $settings_model, 
+        $leave_model, $logistic_model, $project_model;
 
 	    function __construct() {
         parent::__construct();

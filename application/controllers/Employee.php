@@ -2,6 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Employee extends CI_Controller {
+    public $db, $email, $session, $form_validation, $upload, $dashboard_model, $employee_model, $login_model, $payroll_model, $settings_model, $leave_model;
 
 	/**
 	 * Index Page for this controller.
