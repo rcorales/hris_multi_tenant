@@ -2,6 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Settings extends CI_Controller {
+    public $db, $email, $session, $form_validation, $upload, $login_model, $dashboard_model, $employee_model, $project_model, $settings_model, $leave_model;
     
 	    function __construct() {
         parent::__construct();

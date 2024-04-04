@@ -2,6 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Login extends CI_Controller {
+	public $db, $email, $session, $form_validation, $upload, $login_model, $dashboard_model;
 
 	/**
 	 * Index Page for this controller.
