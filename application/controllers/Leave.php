@@ -640,7 +640,7 @@ class Leave extends CI_Controller
             }        
         $hour = $days * 8;
         $emcode = $this->employee_model->emselectByCode($employee);
-        $emid = $emcode->em_id;
+        $emid = $emcode->em_id ?? null;
         $earnval = $this->leave_model->emEarnselectByLeave($emid);
         if(!empty($earnval)){
               $data = array();
