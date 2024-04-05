@@ -51,8 +51,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  * @link		https://codeigniter.com/user_guide/database/
  */
 abstract class CI_DB_driver {
-	public $dataport;
-
 	public $failover;
 
 	/**
@@ -145,7 +143,7 @@ abstract class CI_DB_driver {
 	 *
 	 * @var	int
 	 */
-	public $port			= '3369';
+	public $port			= '';
 
 	/**
 	 * Persistent connection flag

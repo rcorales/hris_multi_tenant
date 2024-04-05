@@ -75,11 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'localhost',
+	'hostname' => 'localhost:3369',
 	'username' => 'root',
 	'password' => '',
 	'database' => 'hrsystemci',
-	'dataport' => '3369',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
