@@ -912,6 +912,10 @@ class Employee extends CI_Controller {
         $provident = $this->input->post('provident');
         $bima = $this->input->post('bima');
         $tax = $this->input->post('tax');
+        $sss_number = $this->input->post('sss_number');
+        $philhealth_number = $this->input->post('philhealth_number');
+        $tin = $this->input->post('tin');
+        $hdmf_number = $this->input->post('hdmf_number');
         $others = $this->input->post('others');
         $this->load->library('form_validation');
         $this->form_validation->set_error_delimiters();
@@ -953,6 +957,10 @@ class Employee extends CI_Controller {
                     'provident_fund' => $provident,
                     'bima' => $bima,
                     'tax' => $tax,
+                    'sss_number' => $sss_number,
+                    'philhealth_number' => $philhealth_number,
+                    'tin' => $tin,
+                    'hdmf_number' => $hdmf_number,
                     'others' => $others
                 );
                 $success = $this->employee_model->Update_Deduction($did,$data2);                    
@@ -979,6 +987,10 @@ class Employee extends CI_Controller {
                     'provident_fund' => $provident,
                     'bima' => $bima,
                     'tax' => $tax,
+                    'sss_number' => $sss_number,
+                    'philhealth_number' => $philhealth_number,
+                    'tin' => $tin,
+                    'hdmf_number' => $hdmf_number,
                     'others' => $others
                 );
                 $success = $this->employee_model->Add_Deduction($data2); 

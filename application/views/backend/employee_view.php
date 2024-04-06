@@ -680,17 +680,33 @@
 			                                    <h3 class="card-title">Deduction</h3>
 			                                    <div class="row">
 			                                    <div class="form-group col-md-6 m-t-5">
+			                                        <label>SSS Number</label>
+			                                        <input type="text" name="sss_number" <?php if($this->session->userdata('user_type')=='EMPLOYEE'){ ?> readonly <?php } ?> class="form-control form-control-line" placeholder="SSS Number" value="<?php if(!empty($salaryvalue->sss_number)) echo $salaryvalue->sss_number ?>"> 
+			                                    </div>
+			                                    <div class="form-group col-md-6 m-t-5">
+			                                        <label>PhilHealth</label>
+			                                        <input type="text" name="philhealth_number" <?php if($this->session->userdata('user_type')=='EMPLOYEE'){ ?> readonly <?php } ?> class="form-control form-control-line" placeholder="PhilHealth" value="<?php if(!empty($salaryvalue->philhealth_number)) echo $salaryvalue->philhealth_number ?>"> 
+			                                    </div>
+			                                    <div class="form-group col-md-6 m-t-5">
+			                                        <label>TIN</label>
+			                                        <input type="text" name="tin" <?php if($this->session->userdata('user_type')=='EMPLOYEE'){ ?> readonly <?php } ?> class="form-control form-control-line" placeholder="TIN" value="<?php if(!empty($salaryvalue->tin)) echo $salaryvalue->tin ?>"> 
+			                                    </div>
+			                                    <div class="form-group col-md-6 m-t-5">
+			                                        <label>HDMF MID Number</label>
+			                                        <input type="text" name="hdmf_number" <?php if($this->session->userdata('user_type')=='EMPLOYEE'){ ?> readonly <?php } ?> class="form-control form-control-line" placeholder="HDMF MID Number" value="<?php if(!empty($salaryvalue->hdmf_number)) echo $salaryvalue->hdmf_number ?>"> 
+			                                    </div>
+			                                    <div class="form-group col-md-6 m-t-5">
 			                                        <label>Insurance</label>
 			                                        <input type="text" name="bima" <?php if($this->session->userdata('user_type')=='EMPLOYEE'){ ?> readonly <?php } ?> class="form-control form-control-line" placeholder="Insurance" value="<?php if(!empty($salaryvalue->bima)) echo $salaryvalue->bima ?>"> 
 			                                    </div>
-			                                    <div class="form-group col-md-6 m-t-5">
+			                                    <!-- <div class="form-group col-md-6 m-t-5">
 			                                        <label>Tax</label>
 			                                        <input type="text" name="tax" <?php if($this->session->userdata('user_type')=='EMPLOYEE'){ ?> readonly <?php } ?> class="form-control form-control-line" placeholder="Tax" value="<?php if(!empty($salaryvalue->tax)) echo $salaryvalue->tax ?>" > 
-			                                    </div>
-			                                    <div class="form-group col-md-6 m-t-5">
+			                                    </div> -->
+			                                    <!-- <div class="form-group col-md-6 m-t-5">
 			                                        <label>Provident Fund</label>
 			                                        <input type="text" name="provident" <?php if($this->session->userdata('user_type')=='EMPLOYEE'){ ?> readonly <?php } ?> class="form-control form-control-line" placeholder="Provident..." value="<?php if(!empty($salaryvalue->provident_fund)) echo $salaryvalue->provident_fund ?>"> 
-			                                    </div>
+			                                    </div> -->
 			                                    <div class="form-group col-md-6 m-t-5">
 			                                        <label>Others</label>
 			                                        <input type="text" name="others" <?php if($this->session->userdata('user_type')=='EMPLOYEE'){ ?> readonly <?php } ?> class="form-control form-control-line" placeholder="others..." value="<?php if(!empty($salaryvalue->others)) echo $salaryvalue->others ?>"> 

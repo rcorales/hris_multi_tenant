@@ -469,7 +469,7 @@ class Payroll extends CI_Controller {
         // Hourly rate for the month
         $hourly_rate = $employee_salary / $total_work_hours; //15.62
 
-        $work_hour_diff = abs($total_work_hours) - abs($employee_actually_worked[0]->Hours);
+        $work_hour_diff = abs($total_work_hours ?? 0) - abs($employee_actually_worked[0]->Hours ?? 0);
         
 
 
